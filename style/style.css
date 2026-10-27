@@ -52,3 +52,81 @@ a{
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+
+.subtitulo{
+    max-width: 700px;
+}
+
+
+.menu-link{
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #F4BC00;
+    color: #020204;
+    border: 2px solid #020204;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menu-link:hover{
+    background-color: #FDFDFB;
+}
+
+.secao{
+    padding: 72px;
+}
+
+.titulo-secao{
+margin-bottom: 32px;
+padding-left: 12px;
+
+border-left: 5px solid #F4BC00;
+border-radius: 5px;
+}
+
+.grade-cards{
+    display: grid;
+    gap: 24px;
+}
+
+.card{
+    padding: 24px;
+    background-color: #FDFDFB;
+    border: 2.5px solid #F4BC00;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(20, 45, 70, 0.08);
+}
+
+.tabela-conhecimentos{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FDFDFB;
+}
+
+.tabela-conhecimentos caption{
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    color: #020204;
+}
+
+.tabela-conhecimentos th,
+.tabela-conhecimentos td{
+    border: 2px solid #F4BC00;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-conhecimentos thead{
+    background-color: #f4bb0042;
+}
+
+.tabela-conhecimentos tfoot{
+    background-color: #f4bb0042;
+}
+
+.secao{
+    padding: 24px;
+    margin: 25px 0;
+}
