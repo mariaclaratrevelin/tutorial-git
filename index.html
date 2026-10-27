@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Tutorial Git</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <p class="etiqueta">Bem vindo (a)!</p>
+            <h1>Tuturial - Programa Git</h1>
+            <p class="subtitulo">
+                Aqui você irá aprender como utilizar o programa Git
+            </p>
+            <a class="menu-link" href="https://pt.wikipedia.org/wiki/Linus_Torvalds">Conheça o criador, Linus Torvalds</a>
+        </div>
+    </header>
+    <main>
+        <section class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">Introdução</h2>
+                <div class="grade-cards">
+                    <article class="card">
+                        <h3 class="titulo-secao">O que é o Git?</h3>
+                        <p>
+                            O Git é um sistema de controle de versões distribuído, utilizado para registrar e acompanhar
+                            as alterações feitas em arquivos ao longo do tempo.
+                            <br>
+                            Ele é muito utilizado no desenvolvimento de software porque permite que programadores
+                            acompanhem a evolução de seus projetos, recuperem versões anteriores e trabalhem em
+                            funcionalidades diferentes sem precisar manter várias cópias manuais de uma mesma pasta.
+                            <br>
+                            Imagine que você está desenvolvendo um site e, ao longo dos dias, altera o HTML, o CSS e o
+                            JavaScript. Com o Git, você pode registrar essas alterações e consultar o histórico do
+                            projeto.
+                            <hr>
+                        <h3>Exemplo prático</h3>
+
+                        Você está criando um site pessoal:
+                        <ul>
+                            <li>Versão 1: criou a página inicial.</li>
+
+                            <li>Versão 2: adicionou um menu de navegação.</li>
+
+                            <li>Versão 3: criou uma página de contato.</li>
+
+                            <li>Versão 4: corrigiu um erro no layout.</li>
+                        </ul>
+                        O Git permite registrar esses estados do projeto e entender o que mudou de uma versão para
+                        outra.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">Qual a diferença de Git e GitHub</h2>
+                <p class="subtitulo">Embora os nomes sejam frequentemente utilizados juntos, eles têm funções
+                    diferentes.
+                </p>
+                <div class="grade-cards">
+                    <article class="card">
+                        <h3 class="titulo-secao">Git</h3>
+                        <p>
+                            É o sistema de controle de versões instalado no computador. Ele permite criar commits,
+                            comparar alterações, criar branches e manter o histórico de um projeto.
+                            <hr>
+                            Exemplo:
+                        <pre class="codigo">
+                                <code>
+                                    git commit -m "Adiciona menu"
+                                </code>
+                            </pre>
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3 class="titulo-secao">GitHub</h3>
+                        <p>
+                            É uma plataforma online que hospeda repositórios Git e oferece ferramentas para colaboração,
+                            como Pull Requests, revisão de código, Issues e gerenciamento de projetos
+                            <hr>
+                            Exemplo: Publicar um repositório e compartilhar seu link.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">Definições de termos</h2>
+                <div class="grade-cards">
+                    <article class="card">
+                        <h3 class="titulo-secao">O que é um repositório?</h3>
+                        <p>
+                            Um repositório, ou repository, é o local onde o Git acompanha os arquivos e
+                            mantém o histórico de versões de um projeto.
+                            <br>
+                            Existem dois conceitos importantes:
+                        <ul>
+                            <li>Repositório local: fica no computador do usuário.</li>
+                            <li>Repositório remoto: fica em um servidor, por exemplo, no GitHub.</li>
+                        </ul>
+                        <br>
+                        Um repositório Git contém informações de controle de versão armazenadas
+                        principalmente na pasta oculta .git.
+                        <br>
+                        Essa pasta guarda dados importantes para o funcionamento do Git, como o
+                        histórico e as referências do projeto. Não é recomendado excluí-la, pois isso
+                        remove os metadados necessários para o repositório funcionar corretamente.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3 class="titulo-secao">O que é um commit?</h3>
+                        <p>
+                            Um commit é um registro de um conjunto de alterações no histórico do
+                            repositório. Cada commit possui um identificador, uma mensagem e informações de
+                            autoria e data.
+                            <br>
+                            Pense nele como um ponto registrado na evolução do projeto.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3 class="titulo-secao">O que é uma branch?</h3>
+                        <p>
+                            Uma branch, ou ramificação, é uma referência móvel para uma linha de
+                            desenvolvimento. Ela permite trabalhar em uma funcionalidade sem precisar
+                            realizar todo o trabalho diretamente na branch principal.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">Instalação e configuração</h2>
+                <div class="grade-cards">
+                    <article class="card">
+                        <h3 class="titulo-secao">Como instalar o Git no Windows?</h3>
+                        <p>
+                        <h3>Passo 1:</h3>
+                        Acesse o site oficial e baixe a versão para Windows.
+                        <br>
+                        <br>
+                        <a class="menu-link" href="https://git-scm.com/install/windows">Download do Git para Windows</a>
+                        <br>
+                        <h3>Passo 2:</h3>
+                        Abra o arquivo baixado e siga as instruções. Para a maioria dos iniciantes, as opções padrão são
+                        suficientes.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">Primeiros comandos</h2>
+                <p class="subtitulo">Os comandos básicos permitem iniciar o controle de versão, acompanhar alterações e
+                    salvar pontos
+                    importantes do projeto.</p>
+                <div class="grade-cards">
+                    <article class="card">
+                        <h3 class="titulo-secao">git init</h3>
+                        <p>
+                            Inicializa um novo repositório Git na pasta atual.
+                            Após executar o comando, o Git cria uma estrutura interna chamada .git, que armazena o
+                            histórico e as informações do repositório.
+                        </p>
+                        <h3 class="titulo-secao">git status</h3>
+                        <p>
+                            Mostra o estado atual do repositório, indicando arquivos modificados, arquivos novos e
+                            alterações preparadas para commit.
+                            É recomendado executar esse comando frequentemente para saber o que será incluído no próximo
+                            commit.
+                        </p>
+                        <h3 class="titulo-secao">git add</h3>
+                        <p>
+                            Prepara as alterações para serem incluídas em um commit. Essa etapa é conhecida como
+                            staging.
+                        <ul>
+                            <li>Para adicionar um arquivo específico: git add index.html</li>
+                            <li>Para adicionar todas as alterações rastreadas e os arquivos novos da pasta atual: git
+                                add .</li>
+                        </ul>
+                        O comando git add não cria um commit; ele apenas prepara as alterações selecionadas.
+                        </p>
+                        <h3 class="titulo-secao">git commit</h3>
+                        <p>
+                            Registra um ponto no histórico do projeto com as alterações preparadas.
+                            A opção -m permite escrever a mensagem do commit diretamente no terminal.
+                            <br>
+                            Uma mensagem clara facilita entender o que foi alterado e por quê.
+                        </p>
+                        <h3 class="titulo-secao">git log</h3>
+                        <p>
+                            Exibe o histórico de commits do repositório.
+                        <ul>
+                            <li>Para visualizar um histórico resumido: git log --oneline</li>
+                        </ul>
+                        Cada commit possui um identificador, autor, data e mensagem.
+                        </p>
+                        <table class="tabela-conhecimentos">
+                            <caption>Problemas comuns e boas práticas</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Situação</th>
+                                    <th scope="col">Comando</th>
+                                    <th scope="col">Resultado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Retirar arquivo da área de staging</th>
+                                    <td>
+                                        <code>
+                                            git restore --staged arquivo.html
+                                        </code>
+                                    </td>
+                                    <td>Mantém as mudanças no arquivo, mas o retira da preparação.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Descartar alterações locais não preparadas</th>
+                                    <td>
+                                        <code>git restore arquivo.html</code>
+                                    </td>
+                                    <td>Descarta as mudanças locais desse arquivo.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Criar um commit que desfaz outro</th>
+                                    <td>
+                                        <code>git revert HASH</code>
+                                    </td>
+                                    <td>Registra um novo commit que reverte as alterações do commit indicado.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Voltar a branch para outro commit</th>
+                                    <td>
+                                        <code>git reset</code>
+                                    </td>
+                                    <td>Move a referência da branch; o efeito depende da opção utilizada.</td>
+                                </tr>
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3">Atenção: <code>git restore</code> pode descartar alterações locais
+                                        definitivamente. Antes de executar comandos destrutivos, confira o estado do
+                                        repositório e faça uma cópia do que deseja preservar.</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
